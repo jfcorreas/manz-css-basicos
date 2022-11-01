@@ -1,0 +1,24 @@
+body {
+  background: #223;
+}
+
+.container {
+  background: grey;
+  min-height: 300px;
+  display: flex;    /* La relación Flex es solo padre-hijo. Los nietos no serían Flex */
+  /* display: inline-flex; Inline-flex es como flex pero el padre se adapta al contenido
+                            en lugar de ocupar todo el espacio disponible*/
+  flex-direction: row;  /* row es por defecto */
+  flex-wrap: wrap;      /* por defecto es nowrap. Con wrap los hijos no varían de tamaño
+                        y se reparten en múltiples líneas */
+  gap: 20px;
+}
+
+.item {
+  background: red;
+  width: 150px;
+  height: 150px;
+  color: white;
+  font-size: 5rem;
+}
+
