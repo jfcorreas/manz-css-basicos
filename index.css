@@ -1,5 +1,5 @@
 body {
-  background: #223;
+  background: rgb(238, 238, 241);
 }
 
 .container {
@@ -12,6 +12,9 @@ body {
   flex-wrap: wrap;      /* por defecto es nowrap. Con wrap los hijos no varían de tamaño
                         y se reparten en múltiples líneas */
   gap: 20px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .item {
@@ -20,5 +23,27 @@ body {
   height: 150px;
   color: white;
   font-size: 5rem;
+}
+
+.island {
+  width: 85px;
+  height: 25px;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 50px;
+  position: absolute;
+  top: 37px;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.island:hover {
+  cursor: pointer;
+  width: 75%;
+  height: 60px;
+  border-radius: 70px;
+  transition: 0.3s ease;
 }
 
